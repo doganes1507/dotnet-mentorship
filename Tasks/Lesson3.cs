@@ -7,10 +7,6 @@ public static class Lesson3
         // TODO: Реализовать функцию, принимающую целое число 'n' и возвращающую true, если число четное, иначе false
         
         return n % 2 == 0;
-        
-        // Console.WriteLine("true");
-        // Console.WriteLine("false");
-        ;
     }
     
     public static void Calculator()
