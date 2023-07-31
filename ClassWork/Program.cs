@@ -56,5 +56,12 @@ public static class Program
         Tasks.Lesson4.FilterByKeyword(new List<string> { "hello", "world", "friend" }, "hello world, my friend!");
         Tasks.Lesson4.FilterByKeyword(new List<string> { "hello", "hi", "good bye" }, "hello and good bye");
         Tasks.Lesson4.FilterByKeyword(new List<string> { "like", "cucumber", "friend", "!" }, "i like cucumber!");
+
+        // SpecialUniteLists
+        Console.WriteLine();
+        Console.WriteLine("SpecialUniteLists");
+        Tasks.Lesson4.SpecialUniteLists(new List<int> { 1, 2, 3, 3 }, new List<int> { 1, 4 });
+        Tasks.Lesson4.SpecialUniteLists(new List<int> { 1, 2, 3, 3 }, new List<int> { 6, 9 });
+        Tasks.Lesson4.SpecialUniteLists(new List<int> { 1, 2, 4, 5 }, new List<int> { 3, 5 });
     }
 }
