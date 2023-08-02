@@ -25,7 +25,12 @@ public static class Lesson4
 
     public static double CalculateAverage<T>(List<T> list) where T : INumber<T>
     {
-        if (list.Count != 0)
+        if (list.Count == 0)
+        {
+            return 0;
+        }
+
+        else
         {
             double sum = 0;
 
@@ -34,14 +39,7 @@ public static class Lesson4
                 sum += Convert.ToDouble(t);
             }
 
-            Console.WriteLine(sum / list.Count);
             return sum / list.Count;
-        }
-
-        else
-        {
-            Console.WriteLine(0);
-            return 0;
         }
     }
 
@@ -57,18 +55,13 @@ public static class Lesson4
             foreach (var t in list)
             {
                 sum += Convert.ToDouble(t);
-            }
-
-            foreach (var t in list)
-            {
                 product *= Convert.ToDouble(t);
             }
-
+            
             result.Add(sum);
             result.Add(product);
         }
-
-        PrintList(result);
+        
         return result;
     }
 
@@ -78,13 +71,12 @@ public static class Lesson4
 
         foreach (var i in list)
         {
-            if (min <= i & i <= max)
+            if (min <= i && i <= max)
             {
                 count++;
             }
         }
 
-        Console.WriteLine(count);
         return count;
     }
 
@@ -95,8 +87,7 @@ public static class Lesson4
         {
             newList.AddRange(list);
         }
-        
-        PrintList(newList);
+
         return newList;
     }
 
@@ -142,7 +133,6 @@ public static class Lesson4
             }  
         }
 
-        PrintList(newList);
         return newList;
     }
 
@@ -152,13 +142,12 @@ public static class Lesson4
 
         foreach (var element in list)
         {
-            if (keyWord.Contains(element))
+            if (element.Contains(keyWord))
             {
                 newList.Add(element);
             }
         }
 
-        PrintList(newList);
         return newList;
     }
 
@@ -173,7 +162,6 @@ public static class Lesson4
             }
         }
 
-        PrintList(newList);
         return newList;
     }
 
@@ -183,18 +171,12 @@ public static class Lesson4
 
         foreach (var element in list2)
         {
-            if (list1.Contains(element))
-            {
-                continue;
-            }
-            
-            else
+            if (!list1.Contains(element))
             {
                 newList.Add(element);
             }
         }
 
-        PrintList(newList);
         return newList;
     }
 }
