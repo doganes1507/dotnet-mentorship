@@ -1,6 +1,6 @@
 ﻿namespace Tasks;
 
-public static class Lesson3
+public static class Tasks3
 {
     public static bool IsEven(int n)
     {

@@ -2,7 +2,7 @@
 
 namespace Tasks;
 
-public static class Lesson4
+public static class Tasks4
 {
     // TODO: Все TODO перед коммитом необходимо удалить
     // Комментарии желательно тоже, если только ты не пишешь комментарии по самому коду
