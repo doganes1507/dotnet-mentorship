@@ -2,7 +2,7 @@
 
 namespace Tasks;
 
-public static class Lesson4
+public static class Tasks4
 {
     public static void PrintList<T>(List<T> list)
     {
