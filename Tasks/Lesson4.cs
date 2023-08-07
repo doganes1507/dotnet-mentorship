@@ -13,8 +13,7 @@ public static class Lesson4
             result += list[i];
             if (i < list.Count - 1)
             {
-                result += ",";
-                result += " ";
+                result += ", ";
             }
         }
 
@@ -30,17 +29,14 @@ public static class Lesson4
             return 0;
         }
 
-        else
+        double sum = 0;
+
+        foreach (var t in list)
         {
-            double sum = 0;
-
-            foreach (var t in list)
-            {
-                sum += Convert.ToDouble(t);
-            }
-
-            return sum / list.Count;
+            sum += Convert.ToDouble(t);
         }
+
+        return sum / list.Count;
     }
 
     public static List<double> CalculateSumAndProduct<T>(List<T> list) where T : INumber<T>
@@ -91,7 +87,7 @@ public static class Lesson4
         return newList;
     }
 
-    public static int StopWord(int stopWord)
+    public static void StopWord(int stopWord)
     {
         var count = 1;
         var list = new List<int>();
@@ -106,19 +102,14 @@ public static class Lesson4
                 break;
             }
 
-            else
-            {
-                list.Add(input);
-                count++;
-            }
+            list.Add(input);
+            count++;
         }
 
         Console.WriteLine();
         Console.WriteLine(list.Min());
         Console.WriteLine(list.Max());
         Console.WriteLine(count);
-        
-        return count;
     }
 
     public static List<int> OnlyEvens(List<int> list)
