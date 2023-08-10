@@ -2,9 +2,6 @@
 
 public static class Tasks5
 {
-    // TODO: Создать и реализовать метод, принимающий строку, и возвращающий true, если эта строка является палиндромом
-    // (то есть читается одинаково в обе стороны) и false в обратном случае
-    
     public static bool IsPalindromes(string word)
     {
         var lowerWord = word.ToLower();
