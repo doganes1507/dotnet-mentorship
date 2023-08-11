@@ -2,17 +2,12 @@
 
 public static class Tasks5
 {
-    public static bool IsPalindromes(string word)
+    public static bool IsPalindrome(string word)
     {
         var lowerWord = word.ToLower();
         var reverseWord = new string(lowerWord.ToCharArray().Reverse().ToArray());
 
-        if (lowerWord == reverseWord)
-        {
-            return true;
-        }
-        
-        return false;
+        return lowerWord == reverseWord;
     }
 
     public static bool IsPrime(int num)
