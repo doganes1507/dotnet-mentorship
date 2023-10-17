@@ -51,11 +51,7 @@ public static class Tasks6
 
         throw new Exception();
     }
-
-    // TODO: Создать и реализовать метод, принимающий на вход список элементов любого типа и возвращающий количество
-    // элементов этого списка, не считая повторяющиеся
-    // {1, 2, 3, 4, 4, 3, 2, 0} => 5
-
+    
     public static int CountOfElements<T>(List<T> list)
     {
         var newList = new List<T>();
