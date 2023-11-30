@@ -1,4 +1,4 @@
-﻿namespace ClassWork.Additional;
+﻿namespace ClassWork.Lesson9;
 
 public interface IRepository
 {
